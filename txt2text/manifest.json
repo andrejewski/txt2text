@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "txt2text",
+	"version": "1.0",
+	"description": "Replaces a customizable list of acronyms with their expanded forms.",
+	"options_page": "options.html",
+	"permissions": ["storage"],
+	"icons": {
+		"48": "icon48.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["*://*/*"],
+			"js": ["initial_script.js","content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}

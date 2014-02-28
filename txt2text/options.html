@@ -1,0 +1,37 @@
+<!-- options.html -->
+<!doctype html>
+<html>
+<head>
+	<title>txt2text Options</title>
+	<style type='text/css'>
+html, body {margin: 0px;}
+* {border-box: border-sizing; font-family: 'Helvetica Neue', Helvetica;}
+
+.header {background-color: #f8f8f8; position: fixed; top: 10px; right: 10px; padding: 10px; width: 140px; z-index: 2; padding: 15px 20px;}
+.header h1 {margin: 0px; font-size: 15px; color: #333;}
+.header p {margin: 0px; padding-top: 5px; font-size: 13px; color: #777;}
+
+#config {
+	display: block; width: 100%; padding: 20px; border: none;
+	position: fixed; top: 0px; bottom: 0px; left: 0px; right: 0px;
+	font-size: 1em; outline: none;
+}
+	</style>
+</head>
+<body>
+	<div class='header'>
+		<h1>txt2text translations</h1>
+		<p>The translation is syntax the short form followed by an equals (=) sign followed by the long form. There can only be one translation per line. Refresh a certain page to see changes.</p>
+		<p>
+			By <a href='http://chrisandrejewski.com/'>Chris Andrejewski</a>. 
+			<br/>
+			View source on <a href='http://github.com/andrejewski/txt2text'>Github</a>.
+		<span id='errors'></span>
+	</div>
+	<div class='content'>
+		<textarea id='config' placeholder='short = long'></textarea>
+	</div>
+	<script type='text/javascript' src='initial_script.js'></script>
+	<script type='text/javascript' src='options.js'></script>
+</body>
+</html>
